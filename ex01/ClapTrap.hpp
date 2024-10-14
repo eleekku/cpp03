@@ -6,7 +6,7 @@
 
 class ClapTrap
 {
-    private:
+    protected:
         std::string _name;
         int _hitpoints;
         int _energyPoints;
@@ -18,9 +18,8 @@ class ClapTrap
         ClapTrap(std::string name);
         ClapTrap(const ClapTrap &copy);
         ClapTrap &operator=(const ClapTrap &copy);
-        void attack(std::string const &target);
-        void takeDamage(unsigned int amount);
-        void beRepaired(unsigned int amount);
+        void    attack(std::string const &target);
+        void    guardGate();
 
 
 };
