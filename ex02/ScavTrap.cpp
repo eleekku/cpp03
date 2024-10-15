@@ -11,10 +11,10 @@ ScavTrap::ScavTrap() : ClapTrap()
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
-    std::cout << "ScavTrap parameterized constructor called" << std::endl;
     this->_hitpoints = 100;
     this->_energyPoints = 50;
     this->_attackDamage = 20;
+    std::cout << "ScavTrap parameterized constructor called with name " << this->_name << std::endl;
 }
 
 ScavTrap::ScavTrap(const ScavTrap &copy) : ClapTrap(copy)
@@ -25,7 +25,7 @@ ScavTrap::ScavTrap(const ScavTrap &copy) : ClapTrap(copy)
 
 ScavTrap::~ScavTrap()
 {
-    std::cout << "ScavTrap destructor called" << std::endl;
+    std::cout << "ScavTrap " << this->_name << " destructor called" << std::endl;
 }
 
 ScavTrap &ScavTrap::operator=(const ScavTrap &copy)

@@ -1,6 +1,6 @@
-NAME		=	ScavTrap
+NAME		=	FragTrap
 
-SRC			=	ClapTrap.cpp ScavTrap.cpp main.cpp
+SRC			=	ClapTrap.cpp ScavTrap.cpp FragTrap.cpp main.cpp
 
 OBJS		=	$(SRC:.cpp=.o)
 
@@ -8,9 +8,9 @@ COMPILE		=	c++
 
 FLAGS		=	-Wall -Wextra -Werror -std=c++17 
 
-EXE_NAME	=	-o ScavTrap
+EXE_NAME	=	-o FragTrap
 
-EXEC		=	ScavTrap
+EXEC		=	FragTrap
 
 # ------------------------------------- RULES ---------------------------------
 all: $(NAME)
